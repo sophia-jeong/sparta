@@ -11,9 +11,34 @@
     /* 제목 스타일 */
     .site-title {
       background-color: hotpink; /* 배경색 */
-      color: goldenrod; /* 글자색 */
+      color: rgb(253, 253, 252); /* 글자색 */
       padding: 20px; /* 내부 여백 */
       text-align: center; /* 가운데 정렬 */
+    }
+    /* 이미지를 감싸는 div에 적용할 클래스 */
+    .image-wrapper {
+      text-align: center;
+      width: 5.5cm; /* 가로 크기 */
+      height: 7cm; /* 세로 크기 */
+      overflow: hidden; /* 이미지가 넘칠 경우를 대비하여 오버플로우 처리 */
+      margin: 0 auto; /* 가운데 정렬 */
+    }
+    /* 모든 이미지의 크기를 동일하게 조정하는 스타일 */
+    .section img {
+      width: 100%; /* 이미지 너비 100% */
+      height: auto; /* 자동 높이 조정 */
+    }
+    /* 섹션 내 제목 스타일 */
+    .section h2 {
+      font-size: 20px; /* 제목 폰트 크기 20 */
+    }
+    /* 섹션 내 내용 스타일 */
+    .section p {
+      font-size: 15px; /* 내용 폰트 크기 15 */
+    }
+    /* 웹사이트 제목 스타일 */
+    .site-title h1 {
+      font-size: 30px; /* 웹사이트 제목 폰트 크기 30 */
     }
   </style>
 </head>
@@ -31,9 +56,11 @@
         <div class="section">
           <h2>첫 번째 섹션 - 보름달이 되고 싶은 반달</h2>
           <!-- 동화책 표지 이미지 -->
-          <img src="moon_book_cover.jpg" alt="보름달이 되고 싶은 반달 동화책 표지" class="img-fluid mb-3">
+          <div class="image-wrapper">
+            <img src="https://img.ypbooks.co.kr/upload/img/book/987/100777987.jpg" alt="보름달이 되고 싶은 반달 동화책 표지" class="img-fluid mb-3">
+          </div>
           <!-- 줄거리 -->
-          <p>
+          <p style="font-size: 15px;">
             어느 날, 작은 반달은 하늘을 바라보며 큰 보름달이 되고 싶어했습니다.
             그래서 반달은 어떻게 보름달이 되는 방법을 알아보기로 했습니다.
             이 동화책은 반달의 모험과 성장을 담고 있습니다.
@@ -46,9 +73,11 @@
         <div class="section">
           <h2>두 번째 섹션 - 눈물바다</h2>
           <!-- 동화책 표지 이미지 -->
-          <img src="tear_sea_book_cover.jpg" alt="눈물바다 동화책 표지" class="img-fluid mb-3">
+          <div class="image-wrapper">
+            <img src="https://img.ypbooks.co.kr/upload/img/book/795/100063795.jpg" alt="눈물바다 동화책 표지" class="img-fluid mb-3">
+          </div>
           <!-- 줄거리 -->
-          <p>
+          <p style="font-size: 15px;">
             눈물바다는 어느 마을에서 자라난 소녀가 주인공입니다. 
             이 소녀는 특별한 능력을 가지고 있어서 눈물을 흘릴 때마다 바다가 넘쳐납니다.
             그리고 어느 날, 그녀는 마을을 구하기 위해 큰 모험에 나서게 됩니다.
@@ -61,9 +90,11 @@
         <div class="section">
           <h2>세 번째 섹션 - 사랑해 사랑해 사랑해</h2>
           <!-- 동화책 표지 이미지 -->
-          <img src="love_book_cover.jpg" alt="사랑해 사랑해 사랑해 동화책 표지" class="img-fluid mb-3">
+          <div class="image-wrapper">
+            <img src="https://img.ypbooks.co.kr/upload/img/book/422/101137422.jpg" alt="사랑해 사랑해 사랑해 동화책 표지" class="img-fluid mb-3">
+          </div>
           <!-- 줄거리 -->
-          <p>
+          <p style="font-size: 15px;">
             사랑해 사랑해 사랑해는 사랑에 관한 이야기를 다루고 있습니다.
             이 책은 서로 다른 세계에서 온 두 사람의 이야기를 담고 있으며, 
             그들은 서로를 이해하고 용서하는 과정을 거쳐 진정한 사랑을 찾아냅니다.
